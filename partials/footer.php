@@ -6,6 +6,7 @@
         <a href="https://www.linkedin.com/in/athaillah-sulthan-firasyal-ilmi-b84109298" target="_blank"><i class="uil uil-linkedin"></i></a> 
         <a href="https://www.facebook.com/profile.php?id=100057245965417" target="_blank"><i class="uil uil-facebook-f"></i></a> 
         <a href="https://www.facebook.com/profile.php?id=100057245965417" target="_blank"><i class="uil uil-twitter"></i></a> 
+        <a href="wa.me/082119890427" target="_blank"><i class="uil uil-whatsapp"></i></a> 
     </div>
     <div class="container footer__container">
         <article>

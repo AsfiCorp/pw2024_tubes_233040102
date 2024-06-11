@@ -1,8 +1,11 @@
 <?php
 include "partials/header.php";
 
-$current_user_id=$_SESSION['id'];
+$current_user_id=$_SESSION['user-id'];
+// echo "<script>console.log('Debug Objects: " . $_SESSION['user-id'] . "' );</script>";
+// echo $current_user_id;
 $query="SELECT  firstname , lastname ,username FROM users WHERE id=$current_user_id ORDER BY id DESC" ;
+// echo "<script>console.log('Debug Objects: " . $query . "' );</script>";
 $posts = mysqli_query($connection,$query);
 ?>
 
@@ -63,6 +66,10 @@ $posts = mysqli_query($connection,$query);
         <span>Nama : <?= $avatar['firstname']?></span>
         <br>
         <span>Nama Akhir : <?= $avatar['lastname']?></span> 
+        <a href="<?= ROOT_URL ?>admin/edit-profile.php?id=<?= $current_user_id ?>" class="btn sm">Edit Profile</a>
+        <!-- <?php 
+            // echo "<script> console.log(". ROOT_URL .");</script>"
+        ?> -->
         </li>
     </div>
 
